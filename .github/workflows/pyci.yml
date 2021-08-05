@@ -5,6 +5,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        # we want to test our package on several versions of Python
+        python-version: [ 3.8 ]
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
