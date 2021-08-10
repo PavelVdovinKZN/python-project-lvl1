@@ -5,7 +5,7 @@ import prompt
 
 def main():
     check_play = 0
-    print("Welcome to the Brain EVEN Games!")
+    print("Welcome to the Brain Games!")
     name = prompt.string('May I have your name? ')
     print('Hello, {0}!'.format(name))
     print("Answer \"yes\" if the number is even, otherwise answer \"no\".")
