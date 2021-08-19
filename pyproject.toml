@@ -1,8 +1,9 @@
 [tool.poetry]
-name = "hexlet-code"
-version = "0.1.0"
-description = ""
-authors = ["Your Name <you@example.com>"]
+name = "Pavel games"
+version = "0.1.9"
+description = "Five brain-games by Pavel"
+authors = ["Pavel <variagkzn@mail.ru>"]
+repository = "https://github.com/PavelVdovinKZN/python-project-lvl1"
 packages = [
   { include = "brain_games" },
 ]
