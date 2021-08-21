@@ -34,8 +34,8 @@ for i in range(3):
         i += 1
     else:
         print("'" + str(user_answer) +
-              "' is wrong answer ;(.Correct answer was "
-              + "'" + str(ans_question) +
+              "' is wrong answer ;(.Correct answer was " +
+              "'" + str(ans_question) +
               "'" ".\nLet's try again, {0}!".format(name))
         sys.exit()
 
