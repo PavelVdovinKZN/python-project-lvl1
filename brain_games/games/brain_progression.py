@@ -19,17 +19,19 @@ def random_progression():
         for y in range(9):
             num = list1[-1]
             list1.append(num + step)
-        random_num = random.randint(1, 9)                           # выбираем число из списка, которое спрячем
-        correct_answer = list1.pop(random_num)                      # удаляем из списка это число
-        list1.insert(random_num, "..")                              # ставим вместо него двоеточие
+        random_num = random.randint(1, 9)         # выбор число, которое спрячем
+        correct_answer = list1.pop(random_num)    # удаляем из списка это число
+        list1.insert(random_num, "..")            # ставим вместо него двоеточие
         print("Question: " + str(list1))
-        user_answer = int(input("Your answer: "))                   # ответ пользователя
+        user_answer = int(input("Your answer: "))
         if user_answer == correct_answer:
             print("Correct!")
             i += 1
         else:
-            print("'" + str(user_answer) + "' is wrong answer ;(. Correct answer was "
-                  + "'" + str(correct_answer) + "'" ".\nLet's try again, {0}!".format(name))
+            print("'" + str(user_answer) +
+                  "' is wrong answer ;(. Correct answer was "
+                  + "'" + str(correct_answer) +
+                  "'" ".\nLet's try again, {0}!".format(name))
             sys.exit()
 
 

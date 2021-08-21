@@ -27,16 +27,17 @@ for i in range(3):
         operand = "/"
         ans_question = num1 // num2
 
-    print(str(num1) + ' ' + str(operand) + ' ' + str(num2))  # печать задания
-    user_answer = int(input("Your answer: "))  # ответ пользователя
+    print(str(num1) + ' ' + str(operand) + ' ' + str(num2))
+    user_answer = int(input("Your answer: "))
     if user_answer == ans_question:
         print("Correct!")
         i += 1
     else:
-        print("'" + str(user_answer) + "' is wrong answer ;(. Correct answer was "
-              + "'" + str(ans_question) + "'" ".\nLet's try again, {0}!".format(name))
+        print("'" + str(user_answer) +
+              "' is wrong answer ;(.Correct answer was "
+              + "'" + str(ans_question) +
+              "'" ".\nLet's try again, {0}!".format(name))
         sys.exit()
-
 
 print("Congratulations, {0}!".format(name))
 

@@ -17,15 +17,17 @@ def main():
         else:
             correct_answer = "no"
         user_answer = input('Your answer: ')
-        if rand_num % 2 == 0 and user_answer == "yes" or rand_num % 2 > 0 and user_answer == "no":
+        if rand_num % 2 == 0 and user_answer == "yes" or \
+                rand_num % 2 > 0 and user_answer == "no":
             print("Correct!")
             check_play += 1
             if int(check_play) == 3:
                 print("Congratulations, {0}!".format(name))
                 return True
         else:
-            print("'" + user_answer + "' is wrong answer ;(. Correct answer was "
-                  + "'" + correct_answer + "'" ".\nLet's try again, {0}!".format(name))
+            print("'" + user_answer + "' is wrong answer ;(.Correct answer was "
+                  + "'" + correct_answer +
+                  "'" ".\nLet's try again, {0}!".format(name))
             return False
 
 

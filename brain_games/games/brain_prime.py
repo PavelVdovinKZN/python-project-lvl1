@@ -28,8 +28,10 @@ def prime():
             print("Correct!")
             i += 1
         else:
-            print("'" + str(user_answer) + "' is wrong answer ;(. Correct answer was "
-                  + "'" + str(correct_answer) + "'" ".\nLet's try again, {0}!".format(name))
+            print("'" + str(user_answer) +
+                  "' is wrong answer ;(. Correct answer was "
+                  + "'" + str(correct_answer) +
+                  "'" ".\nLet's try again, {0}!".format(name))
             sys.exit()
 
 
