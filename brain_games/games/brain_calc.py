@@ -7,7 +7,6 @@ from brain_games.scripts.brain import welcome
 
 welcome()
 name = name()
-#  ans_question - совмещение вопроса с результатом математической операции
 
 print("What is the result of the expression?")
 
