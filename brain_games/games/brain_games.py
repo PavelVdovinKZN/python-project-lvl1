@@ -1,10 +1,11 @@
 import prompt
 
 
-def welcome_user():
+def name():
     print("Welcome to the Brain Games!")
-    name = prompt.string('May I have your name? ')
-    print('Hello, {0}!'.format(name))
+    name1 = prompt.string('May I have your name? ')
+    print('Hello, {0}!'.format(name1))
 
 
-welcome_user()
+if __name__ == '__main__':
+    name()

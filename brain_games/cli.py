@@ -2,8 +2,8 @@ import prompt
 
 
 def name():
-    name1 = prompt.string('May i have your name? ')
-    return name1
+    name_user = prompt.string('May i have your name? ')
+    return name_user
 
 
 if __name__ == "__main__":
