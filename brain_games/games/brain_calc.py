@@ -3,9 +3,9 @@ import random
 import sys
 
 from brain_games.cli import name
-from brain_games.scripts.brain import welcome
+from brain_games.scripts.brain_games import main
 
-welcome()
+main()
 name = name()
 
 print("What is the result of the expression?")
