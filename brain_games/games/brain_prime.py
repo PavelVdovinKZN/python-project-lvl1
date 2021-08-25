@@ -2,11 +2,10 @@
 import random
 import sys
 
-from brain_games.cli import name
-from brain_games.scripts.brain import welcome
+from brain_games.scripts.brain import name_user, welcome_user
 
-welcome()
-name = name()
+welcome = welcome_user()
+name_us = name_user()
 
 print('Answer "yes" if given number is prime. Otherwise answer "no".')
 
@@ -31,13 +30,13 @@ def prime():
             print(
                 "\'{0}\' is wrong answer ;(.Correct answer was \'{1}{2}".format(
                     str(user_answer), str(correct_answer),
-                    "'" ".\nLet's try again, {0}!".format(name)))
+                    "'" ".\nLet's try again, {0}!".format(name_us)))
             sys.exit()
 
 
 prime()
 
-print("Congratulations, {0}!".format(name))
+print("Congratulations, {0}!".format(name_us))
 
 
 def main():
