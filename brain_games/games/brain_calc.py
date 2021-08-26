@@ -24,7 +24,7 @@ def calc():
         else:
             operand = "/"
             correct_answer = num1 // num2
-        print(str(num1) + ' ' + str(operand) + ' ' + str(num2))
+        print("Question: " + str(num1) + ' ' + str(operand) + ' ' + str(num2))
         user_answer = int(input("Your answer: "))
         if user_answer == correct_answer:
             print("Correct!")
