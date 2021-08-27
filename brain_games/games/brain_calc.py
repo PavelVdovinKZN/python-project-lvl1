@@ -2,6 +2,8 @@
 import random
 import sys
 
+import prompt
+
 from brain_games.scripts.brain import name_user, welcome_user
 
 welcome = welcome_user()
@@ -25,7 +27,7 @@ def calc():
             operand = "/"
             correct_answer = num1 // num2
         print("Question: " + str(num1) + ' ' + operand + ' ' + str(num2))
-        user_answer = int(input("Your answer: "))
+        user_answer = prompt.integer("Your answer: ")
         if user_answer == correct_answer:
             print("Correct!")
             i += 1
