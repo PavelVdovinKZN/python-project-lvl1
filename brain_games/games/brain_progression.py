@@ -21,7 +21,7 @@ def random_progression():
         random_num = random.randint(1, 9)     # выбор числа, которое спрячем
         correct_answer = list1[random_num]    # берем число с индексом rand_num
         list1[random_num] = '..'              # ставим вместо него двоеточие
-        print("Question: ", ', '.join([str(num) for num in list1]))
+        print("Question: ", ' '.join([str(num) for num in list1]))
         user_answer = int(input("Your answer: "))
         if user_answer == correct_answer:
             print("Correct!")
