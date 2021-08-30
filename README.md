@@ -4,6 +4,6 @@
 [!Asciinema-brain-even](https://asciinema.org/a/b8ttUID8lT4TOHULY8rhmuyDy)
 [!Asciinema-brain-calc]https://asciinema.org/a/432454
 [!Asciinema-brain-gcd]https://asciinema.org/a/430188
-[!Asciinema-brain-progression]https://asciinema.org/a/431245
+[!Asciinema-brain-progression]https://asciinema.org/a/433135
 [!Asciinema-brain-prime]https://asciinema.org/a/431258
 
