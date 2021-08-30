@@ -20,9 +20,9 @@ def run(correct_answer, name_user):
     if user_answer == correct_answer:
         print("Correct!")
     else:
-        print("'" + str(user_answer) +
-              "' is wrong answer ;(. Correct answer was " + "'" +
-              str(correct_answer) + "'.\nLet's try again, " + name_user + '!')
+        print("'" + str(user_answer) + "' is wrong answer ;(. "
+                                       "Correct answer was '" + str(
+            correct_answer) + "'.\nLet's try again, " + name_user + '!')
         sys.exit()
 
 
