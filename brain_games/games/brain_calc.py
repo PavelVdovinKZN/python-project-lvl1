@@ -19,5 +19,5 @@ def game_round():
     num2 = randint(FIRST_NUMBER, SECOND_NUMBER)
     operator_symbol = choice(operator_symbols)
     current_operator = operators.get(operator_symbol)
-    question = (str(num1) + operator_symbol + str(num2))
+    question = (str(num1) + ' ' + operator_symbol + ' ' + str(num2))
     return question, str(current_operator(num1, num2))
