@@ -1,10 +1,12 @@
+#!/usr/bin/env python
 import prompt
 
 
-def name():
-    name_user = prompt.string('May i have your name? ')
-    return name_user
+def welcome_user():
+    name = prompt.string('May I have your name? ')
+    print('Hello, ' + name + '!')
+    return name
 
 
 if __name__ == "__main__":
-    name()
+    welcome_user()

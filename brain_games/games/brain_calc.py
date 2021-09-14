@@ -1,34 +1,23 @@
 #!/usr/bin/env python
-import random
-from brain_games.scripts.common_logic import welcome, name, run
+from random import randint, choice
+import operator
 
-welcome()
-name = name()
+TASK_DESCRIPTION = 'What is the result of the expression?'
+FIRST_NUMBER = 1
+SECOND_NUMBER = 10
 
-print("What is the result of the expression?")
-
-for i in range(3):
-    num1 = random.randint(1, 10)
-    num2 = random.randint(1, 10)
-    ar_action = random.randint(1, 3)
-    if ar_action == 1:
-        operand = "+"
-        correct_answer = num1 + num2
-    elif ar_action == 2:
-        operand = "-"
-        correct_answer = num1 - num2
-    else:
-        operand = "*"
-        correct_answer = num1 * num2
-    print("Question: " + str(num1) + ' ' + operand + ' ' + str(num2))
-    run(correct_answer, name)
-    if i == 2:
-        print("Congratulations, " + name + "!")
+operators = {
+    '+': operator.add,
+    '*': operator.mul,
+    "-": operator.sub,
+}
+operator_symbols = list(operators.keys())
 
 
-def main():
-    pass
-
-
-if __name__ == '__main__':
-    main()
+def game_round():
+    num1 = randint(FIRST_NUMBER, SECOND_NUMBER)
+    num2 = randint(FIRST_NUMBER, SECOND_NUMBER)
+    operator_symbol = choice(operator_symbols)
+    current_operator = operators.get(operator_symbol)
+    question = (str(num1) + operator_symbol + str(num2))
+    return question, str(current_operator(num1, num2))

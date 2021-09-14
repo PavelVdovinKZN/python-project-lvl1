@@ -1,31 +1,23 @@
 #!/usr/bin/env python
-import random
-from brain_games.scripts.common_logic import welcome, name, run
+from random import randint
 
-welcome()
-name = name()
-
-print('Answer "yes" if given number is prime. Otherwise answer "no".')
-
-for i in range(3):
-    rand_num = random.randint(2, 20)
-    print('Question: ' + str(rand_num))
-    k = 0
-    for y in range(2, rand_num // 2 + 1):
-        if rand_num % y == 0:
-            k = k + 1
-    if k <= 0:
-        correct_answer = "yes"
-    else:
-        correct_answer = "no"
-    run(correct_answer, name)
-    if i == 2:
-        print("Congratulations, " + name + "!")
+TASK_DESCRIPTION = 'Answer "yes" if given number is prime. ' \
+                   'Otherwise answer "no".'
+FIRST_PRIME_NUM = 2
+FIRST_NUMBER = 1
+SECOND_NUMBER = 100
 
 
-def main():
-    pass
+def check_of_prime(rand_num):
+    if rand_num < FIRST_PRIME_NUM:
+        return False
+    for i in range(FIRST_PRIME_NUM, rand_num // 2 + 1):
+        if rand_num % i == 0:
+            return False
+    return True
 
 
-if __name__ == '__main__':
-    main()
+def game_round():
+    rand_num = randint(FIRST_NUMBER, SECOND_NUMBER)
+    correct_answer = 'yes' if check_of_prime(rand_num) else 'no'
+    return str(rand_num), str(correct_answer)
