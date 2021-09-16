@@ -8,7 +8,7 @@ FIRST_NUMBER = 1
 SECOND_NUMBER = 100
 
 
-def check_of_prime(rand_num):
+def is_check_of_prime(rand_num):
     if rand_num < FIRST_PRIME_NUM:
         return False
     for i in range(FIRST_PRIME_NUM, rand_num // 2 + 1):
@@ -17,7 +17,7 @@ def check_of_prime(rand_num):
     return True
 
 
-def game_round():
+def get_game_round():
     rand_num = randint(FIRST_NUMBER, SECOND_NUMBER)
-    correct_answer = 'yes' if check_of_prime(rand_num) else 'no'
+    correct_answer = 'yes' if is_check_of_prime(rand_num) else 'no'
     return str(rand_num), str(correct_answer)

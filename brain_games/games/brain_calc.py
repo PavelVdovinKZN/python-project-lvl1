@@ -14,7 +14,7 @@ operators = {
 operator_symbols = list(operators.keys())
 
 
-def game_round():
+def get_game_round():
     num1 = randint(FIRST_NUMBER, SECOND_NUMBER)
     num2 = randint(FIRST_NUMBER, SECOND_NUMBER)
     operator_symbol = choice(operator_symbols)
