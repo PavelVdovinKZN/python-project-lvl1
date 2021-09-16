@@ -12,7 +12,7 @@ MAX_HIDDEN_NUMBER = 9
 
 def build_progression(first_element, step):
     member, progression = first_element, [first_element]
-    for i in range(9):
+    for i in range(10):
         member += step
         progression.append(member)
     return progression
@@ -20,7 +20,7 @@ def build_progression(first_element, step):
 
 def get_string_from_progression(progression, hidden_number):
     progression_string = []
-    for index in range(0, 9):
+    for index in range(0, 10):
         progression_string.append(str(progression[index]))
     progression_string[hidden_number] = '..'
     return " ".join(progression_string)
